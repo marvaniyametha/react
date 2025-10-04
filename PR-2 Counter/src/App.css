@@ -1,0 +1,90 @@
+/* Background with soft gradient */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 320px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.card h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Counter number */
+.counter {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 1.5rem 0;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.2s ease;
+}
+.counter:active {
+  transform: scale(1.1);
+}
+
+/* Button row */
+.button-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Gradient Buttons */
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #fff;
+}
+
+/* Different button gradients */
+.decrement {
+  background: linear-gradient(135deg, #ff6a6a, #ff3d3d);
+}
+.increment {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+.reset {
+  background: linear-gradient(135deg, #ffcc70, #ff8177);
+  color: #222;
+}
+
+/* Hover & Active */
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+button:active {
+  transform: scale(0.95);
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
