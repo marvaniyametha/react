@@ -1,0 +1,110 @@
+
+body {
+  background: linear-gradient(135deg, #141E30, #243B55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.calculator {
+  width: 320px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  color: white;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.calculator:hover {
+  transform: translateY(-4px);
+}
+
+.display {
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  word-wrap: break-word;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 80px;
+  border-radius: 25px 25px 0 0;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 20px;
+}
+
+
+button {
+  height: 65px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+
+.light-gray {
+  background: linear-gradient(145deg, #d3d3d3, #b5b5b5);
+  color: #000;
+}
+
+.dark-gray {
+  background: linear-gradient(145deg, #2a2a2a, #1c1c1c);
+}
+
+.orange {
+  background: linear-gradient(145deg, #ff9f0a, #ff7b00);
+}
+
+.zero {
+  grid-column: span 2;
+  border-radius: 35px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5) inset;
+}
+button:focus {
+  outline: none;
+}
+button:focus-visible {
+  outline: 2px solid #ff9f0a;
+  outline-offset: 2px;
+}
+
+  /* responsive design */
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 90%;
+  }
+  .display {
+    font-size: 2rem;
+    padding: 20px;
+  }
+  button {
+    height: 55px;
+    font-size: 1.1rem;
+  }
+} 
