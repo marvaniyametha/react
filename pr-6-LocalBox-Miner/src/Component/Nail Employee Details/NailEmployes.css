@@ -1,0 +1,127 @@
+
+
+/* 🌸 Page Background */
+.employee-bg {
+  background: linear-gradient(135deg, #f8cdda 0%, #1d2b64 100%);
+  min-height: 100vh;
+  color: #fff5f7;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🪟 Glass Table Container */
+.glass-table-wrapper {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(18px);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  padding: 1.8rem;
+}
+
+/* 🌈 Table Header Gradient */
+.table-gradient {
+  background: linear-gradient(135deg, #fcbad3, #aa96da, #a8edea);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+/* 🧊 Table Row Hover Effect */
+.modern-table tbody tr {
+  transition: all 0.3s ease;
+}
+.modern-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.01);
+}
+
+/* 💖 Student Image */
+.emp-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fcbad3;
+  box-shadow: 0 0 10px rgba(252, 186, 211, 0.6);
+}
+
+/* 💅 Modal Styling */
+.modern-modal .modal-content {
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modern-modal .modal-header {
+  background: linear-gradient(135deg, #aa96da, #fcbad3);
+  color: #fff;
+  border: none;
+  padding: 1rem 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.modern-modal .modal-body {
+  background-color: #fff7fb;
+  padding: 2rem;
+  color: #4b4453;
+}
+
+/* 💅 Form Labels */
+form label {
+  color: #6a0572;
+  font-weight: 500;
+}
+
+/* 🌷 Buttons */
+button.btn-info {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff) !important;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button.btn-warning {
+  background: linear-gradient(135deg, #f6d365, #fda085) !important;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button.btn-danger {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3) !important;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+button.btn-success {
+  background: linear-gradient(135deg, #fad0c4, #ffd1ff) !important;
+  border: none;
+  color: #6a0572;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+/* ✨ Button Hover Animation */
+button.btn-info:hover,
+button.btn-warning:hover,
+button.btn-danger:hover,
+button.btn-success:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  opacity: 0.95;
+}
+
+button.btn-info:active,
+button.btn-warning:active,
+button.btn-danger:active,
+button.btn-success:active {
+  transform: translateY(0);
+  filter: brightness(1);
+  opacity: 1;
+}
