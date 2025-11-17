@@ -1,0 +1,12 @@
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ea1c23 !important;
+}

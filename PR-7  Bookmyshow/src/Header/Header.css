@@ -1,0 +1,160 @@
+/* Custom Header Styling */
+.bms-header {
+    background: linear-gradient(90deg, #b92b27 0%, #15202B 100%); /* BookMyShow's signature gradient or a sleek dark */
+    padding: 0.8rem 0;
+    font-family: 'Roboto', sans-serif; /* A modern, clean font */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important; /* More prominent shadow */
+}
+
+.bms-logo {
+    font-size: 2.2rem !important; /* Larger logo */
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.bms-logo:hover {
+    color: #e0e0e0 !important;
+}
+
+/* Navigation Links */
+.bms-nav-link {
+    color: #e0e0e0 !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0.8rem;
+    display: flex; /* For icon alignment */
+    align-items: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.bms-nav-link:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+/* Search Bar */
+.bms-search-form {
+    display: flex;
+    flex-grow: 1; /* Allows search bar to take available space */
+    max-width: 500px; /* Limit width on very large screens */
+}
+
+.bms-search-input {
+    border-radius: 50px !important; /* Pill shape */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15) !important; /* Translucent background */
+    color: #ffffff !important;
+    padding: 0.5rem 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.bms-search-input::placeholder {
+    color: #cccccc !important;
+}
+
+.bms-search-input:focus {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important; /* Subtle glow on focus */
+}
+
+.bms-search-button {
+    background-color: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    margin-left: -40px; /* Overlay icon on input */
+    z-index: 10;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0 50px 50px 0 !important; /* Keep pill shape */
+}
+
+.bms-search-button:hover {
+    color: #e0e0e0 !important;
+}
+
+.bms-search-button-mobile {
+    background-color: #b92b27 !important; /* A primary color for mobile search button */
+    border-color: #b92b27 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    font-weight: 600;
+}
+
+/* Dropdown */
+.bms-dropdown-toggle {
+    color: #e0e0e0 !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.bms-dropdown-toggle:hover {
+    color: #ffffff !important;
+}
+
+.bms-user-icon {
+    font-size: 1.4rem;
+}
+
+.dropdown-menu.show {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-item {
+    color: #e0e0e0 !important;
+    padding: 0.7rem 1.2rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+}
+
+.dropdown-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar Toggler Icon */
+.bms-toggler-icon {
+    color: #ffffff; /* White icon for dark background */
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important; /* Remove default focus outline */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .bms-header {
+        padding: 0.6rem 0;
+    }
+
+    .bms-logo {
+        font-size: 1.8rem !important;
+    }
+
+    .bms-nav-link, .bms-dropdown-toggle {
+        font-size: 1.05rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem; /* Adjust padding for mobile links */
+    }
+
+    .bms-dropdown-toggle {
+        width: 100%; /* Make dropdown toggle full width */
+        justify-content: start; /* Align text to start */
+    }
+
+    .dropdown-menu {
+        width: 100%; /* Full width dropdown on mobile */
+        text-align: center;
+    }
+}   
